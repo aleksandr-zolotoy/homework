@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+.form {
+    width: 400px;
+    margin: 30px;
+}
+
+.form-group {
+    padding: 0 20px 25px 20px;
+
+}
+
+.input-group {
+    width: 300px;
+    height: 40px;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 300px;
+    min-height: 70px;
+    width: 300px;
+}
+
+label {
+    display: block;
+}
+
+.button {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.checkbox-item {
+    margin-top: 10px;
+}
