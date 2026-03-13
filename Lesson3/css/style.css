@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    margin: 30px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+td,
+caption,
+th {
+    border: 1px solid black;
+    padding: 6px 10px;
+}
+
+caption {
+    border-bottom: none;
+    font-size: 25px;
+}
+
+
+.color-red {
+    color: red;
+}
