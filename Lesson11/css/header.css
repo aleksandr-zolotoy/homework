@@ -1,0 +1,31 @@
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d3cbd9;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header-info-text {
+  text-align: right;
+}
+
+.header-info-number {
+  text-align: right;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2c332f;
+  transition: color 0.2s;
+}
+
+.header-info-number:hover {
+  color: #3596ed;
+}
