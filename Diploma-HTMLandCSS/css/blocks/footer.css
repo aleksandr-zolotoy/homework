@@ -1,0 +1,183 @@
+.footer {
+  background-color: #f0f0f0;
+}
+
+.footer__main {
+  margin-top: 50px;
+}
+
+.footer__top {
+  display: flex;
+  border-bottom: 1px solid #0000001a;
+}
+
+.footer__brand {
+  max-width: 248px;
+}
+
+.footer__logo-icon {
+  flex-shrink: 0;
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 33px;
+  color: var(--main-color);
+}
+
+.footer__logo-description {
+  font-size: 14px;
+  line-height: 157%;
+  color: var(--secondary-color);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__socials-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.footer__menu {
+  display: grid;
+}
+
+.footer__column-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 113%;
+  letter-spacing: 0.19em;
+}
+
+.footer__column-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-link {
+  font-size: 16px;
+  line-height: 119%;
+  color: var(--secondary-color);
+}
+
+.footer__bottom {
+  display: flex;
+}
+
+.footer__copy {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.footer__payments {
+  display: flex;
+}
+
+.footer__payments-icon {
+  width: 65px;
+  height: 49px;
+}
+
+@media (width > 992px) {
+  .footer__top {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+  }
+
+  .footer__logo-description {
+    margin-top: 25px;
+  }
+
+  .footer__socials {
+    margin-top: 35px;
+  }
+
+  .footer__menu {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    flex-grow: 1;
+    margin-left: 110px;
+  }
+
+  .footer__column-title {
+    padding-bottom: 26px;
+  }
+
+  .footer__column-list {
+    gap: 22px;
+  }
+
+  .footer__bottom {
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (width <= 992px) {
+  .footer__main {
+    margin-top: 28px;
+    padding-bottom: 24px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer__brand {
+    max-width: none;
+  }
+
+  .footer__logo-icon {
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .footer__logo-description {
+    margin-top: 14px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .footer__socials {
+    margin-top: 20px;
+  }
+
+  .footer__menu {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 24px;
+  }
+
+  .footer__column-title {
+    padding-bottom: 16px;
+  }
+
+  .footer__column-list {
+    gap: 14px;
+  }
+
+  .footer__column-link {
+    font-size: 14px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 20px;
+  }
+
+  .footer__copy {
+    text-align: center;
+  }
+
+  .footer__payments {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+}

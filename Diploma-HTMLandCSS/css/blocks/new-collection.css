@@ -1,0 +1,129 @@
+.new-collection__container {
+  padding-bottom: 152px;
+  border-bottom: 1px solid #0000001a;
+}
+
+.new-collection__list {
+  display: grid;
+}
+
+.new-collection__cards {
+  min-width: 0;
+}
+
+@media (width <= 768px) {
+  .new-collection__cards:nth-child(3) {
+    display: none;
+  }
+
+  .new-collection__cards:nth-child(4) {
+    display: none;
+  }
+}
+
+.new-collection__img {
+  display: block;
+  width: 100%;
+}
+
+.new-collection__info-text {
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.new-collection__score {
+  display: flex;
+  align-items: center;
+}
+
+.new-collection__score-stars {
+  width: 18px;
+  height: 17px;
+}
+
+.new-collection__score-star {
+  width: 9px;
+  height: 17px;
+}
+
+.new-collection__score-info-color {
+  color: var(--secondary-color);
+}
+
+.new-collection__price {
+  font-weight: 700;
+}
+
+.new-collection__price-color {
+  text-decoration: line-through;
+  color: var(--disabled-color);
+}
+
+@media (width > 992px) {
+  .new-collection__title {
+    margin-top: 72px;
+    margin-bottom: 55px;
+  }
+
+  .new-collection__list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .new-collection__info-text {
+    font-size: 20px;
+  }
+
+  .new-collection__score {
+    margin-block: 8px;
+    gap: 5px;
+  }
+
+  .new-collection__score-info {
+    padding-left: 8px;
+  }
+
+  .new-collection__price {
+    font-size: 24px;
+  }
+}
+
+@media (width <= 992px) {
+  .new-collection__container {
+    padding-bottom: 114px;
+  }
+
+  .new-collection__title {
+    margin-top: 52px;
+    margin-bottom: 32px;
+  }
+
+  .new-collection__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 16px;
+  }
+
+  .new-collection__info-text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .new-collection__score {
+    flex-wrap: wrap;
+    margin-block: 6px;
+    gap: 4px;
+  }
+
+  .new-collection__score-info {
+    padding-left: 4px;
+    font-size: 12px;
+  }
+
+  .new-collection__price {
+    font-size: 18px;
+  }
+
+  .new-collection__price-color {
+    font-size: 18px;
+  }
+}
